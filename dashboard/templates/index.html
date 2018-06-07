@@ -1,0 +1,10 @@
+{% include 'partials/header.html' %}
+
+    <ul>
+      {% for dashview in dashboard %}
+      <li><a href="/dashboard/details/{{dashview.id}}">{{dashview.title}}</a>: {{dashview.text}}:</li>
+      {% endfor %}
+    </ul>
+
+{% include 'partials/sidenav.html' %}
+{% include 'partials/footer.html' %}
